@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/lista-de-tarefas.svg" type="image/x-icon">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.yellow-amber.min.css" /> 
+    <title>Lista de Tarefas</title>
+
+</head>
+<body>
+    <section>
+        <nav>
+            <div id="fundo">
+                <div>
+                    <h1>
+                        <a href="https://gherma.com.br/listas-de-tarefas/" target="_blank">Lista de Tarefas</a>
+                    </h1>
+                </div>
+                <div id="digitaTarefa">
+                <div id="campoDigita">
+                    <input type="text" id="nova_tarefa" required>
+                    <label>Digite a sua tarefa</label>
+                </div>
+                <div id="div-botao">
+                    <button onclick="addTarefa()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="botao">+</button>
+                </div>
+                </div>
+                <ul id="listaTarefas"></ul>
+            </div>
+        </nav>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
